@@ -37,7 +37,7 @@ export default function IndexPage() {
 
       console.log('unique url',randomUrl)
       const  refreshPage =()=>{ 
-        window.location.reload(); 
+        window.location.reload();  
       }
   return (
     <>
@@ -76,16 +76,21 @@ export default function IndexPage() {
       />
       : 
       <div className='d-flex justify-content-center align-items-center h-100 flex-column'>
-        <h1>Refresh to start again</h1>
-        <button
+        <h1
+        style={{
+          color: "white",
+        }}>Thanks for watching!</h1>
+        {/* <button
           style={{ 
             background: "transparent",
-            border: "2px solid #777",
+            border: "2px solid white",
             // borderRadius: "10px",
             padding: "6px 38px",
-            marginTop: "10px"
+            marginTop: "10px",
+            color: "white",
            }}
-         onClick={refreshPage}>Refresh</button>
+          onClick={refreshPage}>Close
+         </button> */}
         </div>
     }
   </div>
@@ -110,7 +115,7 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Title id="contained-modal-title-vcenter"> </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="video_item"> 
+        <div className="video_item" style={{padding: "0 5% 0 5%"}}> 
                 <h3>Artist Statement</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas tempora iure placeat suscipit recusandae deleniti nesciunt repellendus sapiente deserunt architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quas repudiandae adipisci aliquam deleniti voluptatibus at, sint soluta sunt animi eveniet nam. Voluptatibus vel animi ab modi nostrum doloribus exercitationem!</p>
         </div>
