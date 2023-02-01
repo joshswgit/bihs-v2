@@ -15,11 +15,11 @@ const Video = () => {
     const [currentVideo, setCurrentVideo] = useState(0);  
     const [count,setCount] = useState(1);  
 
-
         const handleShow = (index) => {
             setCurrentVideo(() => (index) % Videos.length);
             setCount(index+1);
         }
+
         const handleNext = () => {
             setCurrentVideo(() => (currentVideo +1) % Videos.length);
             setCount((currentCount) =>  count == Videos.length ? currentCount : currentCount +1);
@@ -44,37 +44,36 @@ const Video = () => {
                             </div>
                         </div>
                         <div className="video_body">
-                            <h1 className="text-center mb-5">INDEX PAGE</h1>
+                            <h1 className="text-center mb-5">Index</h1>
                             <div className="video_list">  
                                <VideoComponent Videos ={Videos} setShow={setShow} handleShow ={handleShow} />    
-                                    {/* modal */}
                                     {
-                                show && (
-                                <div id="myModal" className="mmodal">
-                                <div className="mmodal-content">
-                               {
-                                currentVideo !=0 && <div className="left_icon" onClick={handlePrevious}><FaAngleLeft/></div>
-                               }  
-                               {
-                                count != Videos.length && <div className="right_icon" onClick={handleNext}><FaAngleRight/></div>
-                               }
+                                        show && (
+                                            <div id="myModal" className="mmodal">
+                                                <div className="mmodal-content">
+                                            {
+                                                currentVideo !=0 && <div className="left_icon" onClick={handlePrevious}><FaAngleLeft/></div>
+                                            }  
+                                            {
+                                                count != Videos.length && <div className="right_icon" onClick={handleNext}><FaAngleRight/></div>
+                                            }
 
-                                <span onClick={()=>setShow(false)} className="mclose">&times;</span>
-                                <ReactPlayer
-                                    url={Videos[currentVideo].videoLink}
-                                    autoPlay={true}
-                                    playing={true}
-                                    width="100%"
-                                    height="100%"
-                                    controls={true}
-                                    volume = {false}
-                                    onEnded= { handleNext }
-                                    playsinline
-                                />   
-                            </div>
-                            </div>
-                                )
-                            }
+                                                <span onClick={()=>setShow(false)} className="mclose">&times;</span>
+                                                    <ReactPlayer
+                                                        url={Videos[currentVideo].videoLink}
+                                                        autoPlay={true}
+                                                        playing={true}
+                                                        width="100%"
+                                                        height="100%"
+                                                        controls={true}
+                                                        volume = {false}
+                                                        onEnded= { handleNext }
+                                                        playsinline
+                                                    />   
+                                                </div>
+                                            </div>
+                                        )
+                                    }
                             </div>
                         </div>
                     </div>

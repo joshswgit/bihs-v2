@@ -13,12 +13,12 @@
   
   /* Modal Content/Box */
   .mmodal-content {
-    background-color: #fefefe;
+    background-color: rgba(0, 0, 0, 1);
     margin: 10% auto;
-    padding: 8px;
-    border: 1px solid #888;
+    /* padding: 8px; */
+    /* border: 1px solid #888; */
     max-width: 650px;
-    height: 400px;
+    height: 375px;
     position: relative;
     /* border-radius: 5px; */
     border-radius: unset !important;
