@@ -1,0 +1,97 @@
+.mmodal {
+     /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .mmodal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 8px;
+    border: 1px solid #888;
+    max-width: 650px;
+    height: 400px;
+    position: relative;
+    /* border-radius: 5px; */
+    border-radius: unset !important;
+  }
+  .mmodal-content .right_icon {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 47px;
+    right: -71px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 30px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    transition: .3s all;
+    cursor: pointer;
+}
+.mmodal-content .right_icon:hover {
+    color: #333;
+}
+
+.mmodal-content .left_icon {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 47px;
+    left: -71px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 30px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    transition: .3s all;
+    cursor: pointer;
+}
+.mmodal-content .left_icon:hover{
+    color:#333
+}
+
+
+  /* The Close Button */
+  .mclose {
+    color: #fff;
+    float: right;
+    font-size: 44px;
+    font-weight: bold;
+    position: absolute;
+    right: -32px;
+    top: -28px;
+  }
+  
+  .mclose:hover,
+  .mclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a.self_item_statement {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}
+
+.modal-content{
+  border-radius: unset !important;
+}
+
+.modal-header {
+  border: none !important;
+}
