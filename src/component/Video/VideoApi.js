@@ -129,6 +129,26 @@
         name: "BIHS 26",
         videoLink: "https://vimeo.com/795333757"
     },
+    {
+        id: 27,
+        name: "BIHS 27",
+        videoLink: "https://vimeo.com/795679642"
+    },
+    {
+        id: 28,
+        name: "BIHS 28",
+        videoLink: "https://vimeo.com/795682349"
+    },
+    {
+        id: 29,
+        name: "BIHS 29",
+        videoLink: "https://vimeo.com/795683908"
+    },
+    {
+        id: 30,
+        name: "BIHS 30",
+        videoLink: "https://vimeo.com/795685728"
+    },
 ]
 
 export default Videos

@@ -36,6 +36,10 @@ let playVideos = [
               Videos[23].videoLink,
               Videos[24].videoLink,
               Videos[25].videoLink,
+              Videos[26].videoLink,
+              Videos[27].videoLink,
+              Videos[28].videoLink,
+              Videos[29].videoLink,
             ]
 
  let randomItems
@@ -64,9 +68,9 @@ export default function IndexPage() {
   return (
     <>
 
-<h1 style={{ marginTop:"100px" }} className="text-center">BOATS I HAVE SEEN</h1>
+<h1 style={{ marginTop:"80px" }} className="text-center">BOATS I HAVE SEEN</h1>
     <div className='d-flex align-items-center justify-content-center button_one position-relative' style={{ height:"70vh" }}>
-            <a type='button' onClick={()=>{setShow(true); handleShow()}}>Play</a>
+            <a type='button' class='play-button' onClick={()=>{setShow(true); handleShow()}}>Play</a>
       <NavLink to='/index' className="ms-4">Index</NavLink>
       <NavLink  className="self_item_statement" onClick={() => { setModalShow(true)}}>Statement</NavLink>
 
