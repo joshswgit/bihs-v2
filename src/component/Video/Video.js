@@ -17,17 +17,17 @@ const Video = () => {
 
         const handleShow = (index) => {
             setCurrentVideo(() => (index) % Videos.length);
-            setCount(index+1);
+            setCount(index + 1);
         }
 
         const handleNext = () => {
-            setCurrentVideo(() => (currentVideo +1) % Videos.length);
-            setCount((currentCount) =>  count == Videos.length ? currentCount : currentCount +1);
+            setCurrentVideo(() => (currentVideo + 1) % Videos.length);
+            setCount((currentCount) =>  count == Videos.length ? currentCount : currentCount + 1);
         }
 
         const handlePrevious = () => {
-            setCurrentVideo(() => (currentVideo -1) % Videos.length);
-            setCount((currentCount) =>  count == 0 ?  currentCount : currentCount -1);
+            setCurrentVideo(() => (currentVideo - 1) % Videos.length);
+            setCount((currentCount) =>  count == 0 ?  currentCount : currentCount - 1);
         }
         
         console.log('current video',currentVideo)
@@ -52,7 +52,7 @@ const Video = () => {
                                             <div id="myModal" className="mmodal">
                                                 <div className="mmodal-content">
                                             {
-                                                currentVideo !=0 && <div className="left_icon" onClick={handlePrevious}><FaAngleLeft/></div>
+                                                currentVideo != 0 && <div className="left_icon" onClick={handlePrevious}><FaAngleLeft/></div>
                                             }  
                                             {
                                                 count != Videos.length && <div className="right_icon" onClick={handleNext}><FaAngleRight/></div>

@@ -14,18 +14,18 @@ function VideoComponent({ Videos, setShow, handleShow }) {
   return (
     <>
         <div style={{ display:'flex', }}>
-        {[1,2,3,4,5].map((item, index) => 
-            <RepeatedVideo
-                Videos ={Videos}
-                setStartVideo ={setStartVideo}
-                index ={index}
-                item ={item}
-                setShow={setShow}
-                startVideo={startVideo}
-                totalVideo={totalVideo}
-                handleShow ={handleShow} 
-            /> 
-        )}
+            {[1,2,3,4,5].map((item, index) => 
+                <RepeatedVideo
+                    Videos ={Videos}
+                    setStartVideo ={setStartVideo}
+                    index ={index}
+                    item ={item}
+                    setShow={setShow}
+                    startVideo={startVideo}
+                    totalVideo={totalVideo}
+                    handleShow ={handleShow} 
+                /> 
+            )}
         </div>
     </>
   )
@@ -40,13 +40,15 @@ function RepeatedVideo({Videos,setShow,handleShow,index,item,setStartVideo,total
     return (
         <div key = {index} style={{ display:'flex', width:'20%', flexDirection:'column', alignItems: 'center', }}> 
                 {
-                    Videos.slice(totalVideo*(index), totalVideo*(index+1)).map( (vid, index) => { 
+                    Videos.slice(totalVideo*(index), totalVideo*(index + 1)).map( (vid, index) => { 
                         return (
                             <>
                                 <p key={index}>
                                     <span style={{ cursor:"pointer" }} onClick={ ()=>{
-                                        setShow(true); handleShow(index)
-                                    }}>{vid.name}</span>
+                                        setShow(true); handleShow(vid.id - 1)
+                                    }}>
+                                        {vid.name}
+                                    </span>
                                 </p>                                         
                             </>                                  
                         )
