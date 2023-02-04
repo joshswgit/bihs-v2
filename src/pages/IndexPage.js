@@ -40,6 +40,11 @@ let playVideos = [
               Videos[27].videoLink,
               Videos[28].videoLink,
               Videos[29].videoLink,
+              Videos[30].videoLink,
+              Videos[31].videoLink,
+              Videos[32].videoLink,
+              Videos[33].videoLink,
+              Videos[34].videoLink,
             ]
 
  let randomItems
