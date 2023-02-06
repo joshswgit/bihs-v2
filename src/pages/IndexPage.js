@@ -45,6 +45,21 @@ let playVideos = [
               Videos[32].videoLink,
               Videos[33].videoLink,
               Videos[34].videoLink,
+              Videos[35].videoLink,
+              Videos[36].videoLink,
+              Videos[37].videoLink,
+              Videos[38].videoLink,
+              Videos[39].videoLink,
+              Videos[40].videoLink,
+              Videos[41].videoLink,
+              Videos[42].videoLink,
+              Videos[43].videoLink,
+              Videos[44].videoLink,
+              Videos[45].videoLink,
+              Videos[46].videoLink,
+              Videos[47].videoLink,
+              Videos[48].videoLink,
+              Videos[49].videoLink,
             ]
 
  let randomItems
