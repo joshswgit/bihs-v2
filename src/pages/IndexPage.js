@@ -80,6 +80,16 @@ let playVideos = [
               Videos[67].videoLink,
               Videos[68].videoLink,
               Videos[69].videoLink,
+              Videos[70].videoLink,
+              Videos[71].videoLink,
+              Videos[72].videoLink,
+              Videos[73].videoLink,
+              Videos[74].videoLink,
+              Videos[75].videoLink,
+              Videos[76].videoLink,
+              Videos[77].videoLink,
+              Videos[78].videoLink,
+              Videos[79].videoLink,
             ]
 
  let randomItems

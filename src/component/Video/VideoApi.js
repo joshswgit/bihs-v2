@@ -349,6 +349,56 @@
         name: "BIHS 70",
         videoLink: "https://vimeo.com/796715129"
     },
+    {
+        id: 71,
+        name: "BIHS 71",
+        videoLink: "https://vimeo.com/797091448"
+    },
+    {
+        id: 72,
+        name: "BIHS 72",
+        videoLink: "https://vimeo.com/797092695"
+    },
+    {
+        id: 73,
+        name: "BIHS 73",
+        videoLink: "https://vimeo.com/797094251"
+    },
+    {
+        id: 74,
+        name: "BIHS 74",
+        videoLink: "https://vimeo.com/797096454"
+    },
+    {
+        id: 75,
+        name: "BIHS 75",
+        videoLink: "https://vimeo.com/797097859"
+    },
+    {
+        id: 76,
+        name: "BIHS 76",
+        videoLink: "https://vimeo.com/797099787"
+    },
+    {
+        id: 77,
+        name: "BIHS 77",
+        videoLink: "https://vimeo.com/797104202"
+    },
+    {
+        id: 78,
+        name: "BIHS 78",
+        videoLink: "https://vimeo.com/797105867"
+    },
+    {
+        id: 79,
+        name: "BIHS 79",
+        videoLink: "https://vimeo.com/797107498"
+    },
+    {
+        id: 80,
+        name: "BIHS 80",
+        videoLink: "https://vimeo.com/797108748"
+    },
 ]
 
 export default Videos
