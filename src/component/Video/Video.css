@@ -44,10 +44,10 @@
 
  
 .button_one a {
-    color: #000;
+    color: white;
     width: 186px;
     height: 62px;
-    border: 2px solid #B8B8B8;
+    border: 2px solid white;
     display: inline-block;
     text-align: center;
     line-height: 60px;

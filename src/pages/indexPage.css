@@ -7,21 +7,38 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0,1); /* Fallback color */
+    background-color: rgba(0,0,0,1); /* Black w/ opacity */
 }
   
   /* Modal Content/Box */
 .mmodal-content {
   background-color: rgba(0, 0, 0, 1);
-  margin: 10% auto;
+  margin: 2% auto;
   /* padding: 8px; */
   /* border: 1px solid #888; */
-  max-width: 650px;
-  height: 375px;
+  max-width: 1080px;
+  height: 600px;
   position: relative;
   /* border-radius: 5px; */
   border-radius: unset !important;
+}
+
+@media screen and (min-width: 1025px) {
+  .mmodal-content {
+    max-width: 1100px;
+    height: 600px;
+  }
+}
+
+@media  screen and (max-width: 480px) {
+  .mmodal-content {
+    max-width: 400px;
+    height: 300px;
+  }
+  .mmodal {
+    padding-top: 5% auto;
+  }
 }
   
 .mmodal-content .right_icon {
@@ -42,7 +59,7 @@
 }
 
 .mmodal-content .right_icon:hover {
-    color: #333;
+  color: grey;
 }
 
 .mmodal-content .left_icon {
@@ -63,7 +80,7 @@
 }
 
 .mmodal-content .left_icon:hover{
-    color:#333
+    color: grey;
 }
 
   /* The Close Button */
@@ -79,7 +96,7 @@
   
 .mclose:hover,
 .mclose:focus {
-  color: black;
+  color: grey;
   text-decoration: none;
   cursor: pointer;
 }
@@ -100,4 +117,8 @@ a.self_item_statement {
 
 .play-button:hover {
   color: rgba(0, 0, 0, 1);
+}
+
+.video_item {
+  color: black;
 }
