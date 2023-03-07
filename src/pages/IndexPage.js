@@ -1,11 +1,10 @@
-import React,{useEffect, useState } from 'react'
+import React,{useEffect, useState } from 'react';
 
 import { FaAngleLeft,FaAngleRight } from "react-icons/fa";
 import "./indexPage.css"
 import ReactPlayer from 'react-player'
 import { NavLink } from 'react-router-dom';
 import Videos from '../component/Video/VideoApi';
-
 
 import Modal from 'react-bootstrap/Modal';
 
@@ -154,8 +153,8 @@ export default function IndexPage() {
     <div className='d-flex align-items-center justify-content-center button_one position-relative' style={{ height:"70vh" }}>
             <a type='button' class='play-button' onClick={()=>{setShow(true); handleShow()}}>Play</a>
       <NavLink to='/index' className="ms-4">Index</NavLink>
-      <NavLink  className="self_item_statement" onClick={() => { setModalShow(true)}}>Statement</NavLink>
-
+      <NavLink to='/statement' className="self_item_statement">Statement</NavLink>
+      {/* <NavLink  className="self_item_statement" onClick={() => { setModalShow(true)}}>Statement</NavLink> */}
     </div>
     <MyVerticallyCenteredModal  show={modalShow}  onHide={() => setModalShow(false)} />  
   {
