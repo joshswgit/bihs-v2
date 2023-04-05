@@ -69,6 +69,8 @@ const Video = () => {
                                                         volume = {false}
                                                         onEnded= { handleNext }
                                                         playsinline
+                                                        webkitallowfullscreen="true"
+                                                        mozallowfullscreen="true"
                                                     />   
                                                 </div>
                                             </div>
