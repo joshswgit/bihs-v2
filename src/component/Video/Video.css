@@ -6,6 +6,10 @@
     padding-top: 50px;
 }
 
+.video_list {
+    margin-bottom: 40px;
+}
+
 .video_list ul {
     /* display: flex;
     flex-direction: column;

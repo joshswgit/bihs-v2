@@ -13,7 +13,7 @@ function VideoComponent({ Videos, setShow, handleShow }) {
 
   return (
     <>
-        <div style={{ display:'flex', }}>
+        <div style={{ display:'flex', justifyContent:"center"}}>
             {[1,2,3,4,5].map((item, index) => 
                 <RepeatedVideo
                     Videos ={Videos}
@@ -38,7 +38,7 @@ function RepeatedVideo({Videos,setShow,handleShow,index,item,setStartVideo,total
     // useEffect(() => { 
     // }, [])
     return (
-        <div key = {index} style={{ display:'flex', width:'20%', flexDirection:'column', alignItems: 'center', }}> 
+        <div key = {index} style={{ display:'flex', width:'10%', flexDirection:'column', alignItems: 'center', }}> 
                 {
                     Videos.slice(totalVideo*(index), totalVideo*(index + 1)).map( (vid, index) => { 
                         return (
