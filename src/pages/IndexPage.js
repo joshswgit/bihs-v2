@@ -36,7 +36,7 @@ export default function IndexPage() {
   return (
     <>
     <div className='d-flex flex-column align-items-center justify-content-center button_one position-relative' style={{ height:"80vh" }}>
-          <h1 style={{ marginBottom:"80px" }} className="text-center">BOATS I HAVE SEEN</h1>
+          <h1 style={{ marginBottom:"80px", fontWeight: 300 }} className="text-center ">BOATS I HAVE SEEN</h1>
           <div className="d-flex align-items-center justify-content-center"> 
           <a type='button' class='play-button' onClick={()=>{setShow(true); handleShow()}}>Play Random</a>
           <NavLink to='/index' className="ms-4">Index</NavLink>
