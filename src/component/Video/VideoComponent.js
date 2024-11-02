@@ -34,9 +34,6 @@ function VideoComponent({ Videos, setShow, handleShow }) {
 export default VideoComponent
 
 function RepeatedVideo({Videos,setShow,handleShow,index,item,setStartVideo,totalVideo, startVideo}) {
-
-    // useEffect(() => { 
-    // }, [])
     return (
         <div key = {index} style={{ display:'flex', width:'10%', flexDirection:'column', alignItems: 'center', }}> 
                 {

@@ -16,7 +16,7 @@ return (
                   </div>
               </div>
               <div className="video_body">
-                  <h1 style={{ marginBottom:"80px", fontWeight: 300 }} className="text-center mb-5">BOATS I HAVE SEEN</h1>
+                  <h1 style={{ marginBottom:"80px", fontWeight: 300 }} className="letters-spaced text-center mb-5">BOATS I HAVE SEEN</h1>
                   <div className="video_list">  
                   <div className="video_item" style={{padding: "0 13% 0 13%", color: 'white'}}> 
                      <h3 style={{ marginBottom:"20px", fontWeight: 200 }}>Artist Statement</h3>

@@ -44,7 +44,7 @@ const Video = () => {
                             </div>
                         </div>
                         <div className="video_body">
-                            <h1 style={{ marginBottom:"80px", fontWeight: 300 }} className="text-center mb-5">INDEX</h1>
+                            <h1 style={{ marginBottom:"80px", fontWeight: 300 }} className="text-center mb-5 letters-spaced">INDEX</h1>
                             <div className="video_list">  
                                <VideoComponent Videos ={Videos} setShow={setShow} handleShow ={handleShow} />    
                                     {

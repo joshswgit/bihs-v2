@@ -1,3 +1,7 @@
+.letters-spaced {
+  letter-spacing: 5px;
+}
+
 .mmodal {
      /* Hidden by default */
     position: fixed; /* Stay in place */
