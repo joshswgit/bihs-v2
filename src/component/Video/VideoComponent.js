@@ -13,7 +13,7 @@ function VideoComponent({ Videos, setShow, handleShow }) {
 
   return (
     <>
-        <div style={{ display:'flex', }}>
+        <div style={{ display:'flex', justifyContent:"center", gap: "20px"}}>
             {[1,2,3,4,5].map((item, index) => 
                 <RepeatedVideo
                     Videos ={Videos}
@@ -34,17 +34,14 @@ function VideoComponent({ Videos, setShow, handleShow }) {
 export default VideoComponent
 
 function RepeatedVideo({Videos,setShow,handleShow,index,item,setStartVideo,totalVideo, startVideo}) {
-
-    // useEffect(() => { 
-    // }, [])
     return (
-        <div key = {index} style={{ display:'flex', width:'20%', flexDirection:'column', alignItems: 'center', }}> 
+        <div key = {index} style={{ display:'flex', width:'10%', flexDirection:'column', alignItems: 'center', gap: "15px"}}> 
                 {
                     Videos.slice(totalVideo*(index), totalVideo*(index + 1)).map( (vid, index) => { 
                         return (
                             <>
                                 <p key={index}>
-                                    <span style={{ cursor:"pointer" }} onClick={ ()=>{
+                                    <span style={{ cursor:"pointer", fontSize: "20px" }} onClick={ ()=>{
                                         setShow(true); handleShow(vid.id - 1)
                                     }}>
                                         {vid.name}

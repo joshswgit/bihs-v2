@@ -1,3 +1,7 @@
+.letters-spaced {
+  letter-spacing: 3px;
+}
+
 .mmodal {
      /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -39,15 +43,22 @@
     padding-top: 5% auto;
   }
 }
+
+.player-next-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 30px;
+  padding-bottom:20px;
+}
+
+.empty-left-container {
+  width: 25px;
+}
   
 .mmodal-content .right_icon {
-    position: absolute;
     content: "";
     height: 30px;
-    width: 47px;
-    right: -50px;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 30px;
     text-align: center;
     font-size: 30px;
     line-height: 24px;
@@ -85,12 +96,10 @@
   /* The Close Button */
 .mclose {
   color: #fff;
-  float: right;
-  font-size: 44px;
+  font-size: 30px;
   font-weight: bold;
-  position: absolute;
-  right: -32px;
-  top: -20px;
+  line-height:24px;
+  transform:translateX(-20px)
 }
   
 .mclose:hover,
