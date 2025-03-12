@@ -53,10 +53,13 @@ return (
                     </p>
                     <br />
                     <br />
-                    <p className="statement-nb">
-                            NB: While the viewer can select a single video using the Index function, either the Random or
+                    <p>
+                        NB: While the viewer can select a single video using the Index function, either the Random or
                         the Index choice will provide a continuous stream pulled from the collection pausing briefly
                         between scenes.
+                    </p>
+                    <br />
+                    <p className="statement-nb">
                         My thanks to Andrew Delmar, Andre Bautista and Scott Power for their contributions to the
                         web display of this project.
                     </p>
