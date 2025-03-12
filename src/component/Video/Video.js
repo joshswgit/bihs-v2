@@ -5,7 +5,7 @@ import Videos from './VideoApi'
 import './Video.css';
 import ReactPlayer from 'react-player'
 import '../../pages/indexPage.css'
-import { FaAngleLeft,FaAngleRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 import VideoComponent from "./VideoComponent";
  
 const Video = () => {
@@ -47,35 +47,34 @@ const Video = () => {
                             <h1 style={{ marginBottom:"80px", fontWeight: 300 }} className="text-center mb-5 letters-spaced">INDEX</h1>
                             <div className="video_list">  
                                <VideoComponent Videos ={Videos} setShow={setShow} handleShow ={handleShow} />    
-                                    {
-                                        show && (
-                                            <div id="myModal" className="mmodal">
-                                                <div className="mmodal-content">
-                                            {
-                                                currentVideo != 0 && <div className="left_icon" onClick={handlePrevious}><FaAngleLeft/></div>
-                                            }  
-                                            {
-                                                count != Videos.length && <div className="right_icon" onClick={handleNext}><FaAngleRight/></div>
-                                            }
-
-                                                <span onClick={()=>setShow(false)} className="mclose">&times;</span>
-                                                    <ReactPlayer
-                                                        url={Videos[currentVideo].videoLink}
-                                                        autoPlay={true}
-                                                        playing={true}
-                                                        width="100%"
-                                                        height="100%"
-                                                        controls={true}
-                                                        volume = {false}
-                                                        onEnded= { handleNext }
-                                                        playsinline
-                                                        webkitallowfullscreen="true"
-                                                        mozallowfullscreen="true"
-                                                    />   
-                                                </div>
-                                            </div>
-                                        )
-                                    }
+                                {
+                                show && (
+                                    <div id="myModal" className="mmodal">
+                                        <div className="mmodal-content">
+                                            <ReactPlayer
+                                                url={Videos[currentVideo].videoLink}
+                                                autoPlay={true}
+                                                playing={true}
+                                                width="100%"
+                                                height="100%"
+                                                controls={true}
+                                                volume = {false}
+                                                onEnded= { handleNext }
+                                                playsinline
+                                                webkitallowfullscreen="true"
+                                                mozallowfullscreen="true"
+                                            /> 
+                                            { count != Videos.length && (
+                                                <div className="player-next-container">
+                                                    <div class="empty-left-container"></div>
+                                                    <div className="right_icon" onClick={handleNext}><FaAngleRight/></div> 
+                                                    <span onClick={()=>setShow(false)} className="mclose">&times;</span>
+                                                </div>  
+                                            )}
+                                        </div>
+                                    </div>
+                                    )
+                                }
                             </div>
                         </div>
                     </div>

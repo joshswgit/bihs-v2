@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 import "./indexPage.css";
 import ReactPlayer from "react-player";
 import { NavLink } from "react-router-dom";
@@ -49,7 +49,7 @@ export default function IndexPage() {
         style={{ height: "80vh" }}
       >
         <h1
-          style={{ fontSize: "50px", marginBottom: "80px", fontWeight: 300 }}
+          style={{ marginBottom: "80px", fontWeight: 300 }}
           className="text-center letters-spaced"
         >
           BOATS I HAVE SEEN
@@ -82,19 +82,6 @@ export default function IndexPage() {
       {show && (
         <div tabIndex={0} id="myModal" className="mmodal" onKeyDownCapture={handleKeyDown}>
           <div className="mmodal-content">
-            {randomUrl !== undefined && (
-              <div>
-                <div className="left_icon" onClick={handleShow}>
-                  <FaAngleLeft />
-                </div>
-                <div className="right_icon" onClick={handleShow}>
-                  <FaAngleRight />
-                </div>
-              </div>
-            )}
-            <span onClick={() => setShow(false)} className="mclose">
-              &times;
-            </span>
             {randomUrl !== undefined ? (
               <ReactPlayer
                 url={randomUrl}
@@ -116,17 +103,17 @@ export default function IndexPage() {
                 >
                   Thanks for watching!
                 </h1>
-                {/* <button
-          style={{ 
-            background: "transparent",
-            border: "2px solid white",
-            // borderRadius: "10px",
-            padding: "6px 38px",
-            marginTop: "10px",
-            color: "white",
-           }}
-          onClick={refreshPage}>Close
-         </button> */}
+              </div>
+            )}
+            {randomUrl !== undefined && (
+              <div className="player-next-container">
+                <div class="empty-left-container"></div>
+                <div className="right_icon" onClick={handleShow}>
+                  <FaAngleRight />
+                </div>
+                <span onClick={() => setShow(false)} className="mclose">
+                    &times;
+                </span>
               </div>
             )}
           </div>
