@@ -38,7 +38,6 @@ export default function IndexPage() {
     return;
   };
 
-  console.log("unique url", randomUrl);
   const refreshPage = () => {
     window.location.reload();
   };
