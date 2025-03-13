@@ -39,24 +39,28 @@ return (
                     <br/>
                     <p>
                         You may find yourself here because you just like boats or water or Seattle. That’s fine, too.
+                    </p>
+                    <br/>
+                    <p>
                         The videos are unedited except for the front title and the fades. They do not try to catalog the
                         large numbers and types of boats to be seen in and around Seattle and its remarkable bodies of
                         water.
                     </p>
                     <br/>
                     <p>
-                        <em>
-                            Joshua Wattles<br/>
-                            joshuawattles@gmail.com<br/>
-                            March, 2025
-                        </em>
+                        Joshua Wattles<br/>
+                        joshuawattles@gmail.com<br/>
+                        March, 2025
                     </p>
                     <br />
                     <br />
-                    <p className="statement-nb">
-                            NB: While the viewer can select a single video using the Index function, either the Random or
+                    <p>
+                        NB: While the viewer can select a single video using the Index function, either the Random or
                         the Index choice will provide a continuous stream pulled from the collection pausing briefly
                         between scenes.
+                    </p>
+                    <br />
+                    <p className="statement-nb">
                         My thanks to Andrew Delmar, Andre Bautista and Scott Power for their contributions to the
                         web display of this project.
                     </p>
