@@ -39,17 +39,18 @@ return (
                     <br/>
                     <p>
                         You may find yourself here because you just like boats or water or Seattle. That’s fine, too.
+                    </p>
+                    <br/>
+                    <p>
                         The videos are unedited except for the front title and the fades. They do not try to catalog the
                         large numbers and types of boats to be seen in and around Seattle and its remarkable bodies of
                         water.
                     </p>
                     <br/>
                     <p>
-                        <em>
-                            Joshua Wattles<br/>
-                            joshuawattles@gmail.com<br/>
-                            March, 2025
-                        </em>
+                        Joshua Wattles<br/>
+                        joshuawattles@gmail.com<br/>
+                        March, 2025
                     </p>
                     <br />
                     <br />
