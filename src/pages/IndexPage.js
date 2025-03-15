@@ -74,10 +74,6 @@ export default function IndexPage() {
         </NavLink>
         {/* <NavLink  className="self_item_statement" onClick={() => { setModalShow(true)}}>Statement</NavLink> */}
       </div>
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
       {show && (
         <div tabIndex={0} id="myModal" className="mmodal" onKeyDownCapture={handleKeyDown}>
           <div className="mmodal-content">
@@ -89,7 +85,7 @@ export default function IndexPage() {
                 width="100%"
                 height="100%"
                 controls={true}
-                volume={false}
+                muted={true}
                 onEnded={handleShow}
                 playsinline
               />
@@ -119,35 +115,5 @@ export default function IndexPage() {
         </div>
       )}
     </>
-  );
-}
-
-// Modal
-function MyVerticallyCenteredModal(props) {
-  return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter"> </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <div className="video_item" style={{ padding: "0 5% 0 5%" }}>
-          <h3>Artist Statement</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
-            tempora iure placeat suscipit recusandae deleniti nesciunt
-            repellendus sapiente deserunt architecto? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Labore quas repudiandae adipisci
-            aliquam deleniti voluptatibus at, sint soluta sunt animi eveniet
-            nam. Voluptatibus vel animi ab modi nostrum doloribus
-            exercitationem!
-          </p>
-        </div>
-      </Modal.Body>
-    </Modal>
   );
 }
